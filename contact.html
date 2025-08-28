@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en"><head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact & Quote | Aureus Aquatics</title>
+  <meta name="description" content="Request a quote for custom aquariums or maintenance plans in San Antonio, Austin, and the Hill Country.">
+  <link rel="stylesheet" href="/css/styles.css"><link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+</head><body class="theme">
+<header class="site-header"><div class="container nav">
+  <a class="brand wordmark" href="/index.html">Aureus Aquatics</a>
+  <nav class="primary-nav" id="nav">
+    <a href="/design-build.html">Design &amp; Build</a>
+    <a href="/services.html">Services</a>
+    <a href="/gallery.html">Gallery</a>
+    <a href="/about.html">About</a>
+    <a class="btn btn-gold" href="/contact.html" aria-current="page">Request a Quote</a>
+  </nav><button class="hamburger" onclick="toggleNav()"><span></span><span></span><span></span></button>
+</div></header>
+
+<section class="page-hero container">
+  <h1>Request a Quote</h1>
+  <p>Tell us about your space, vision, and target size. We’ll follow up to schedule a site survey.</p>
+</section>
+
+<section class="container grid-2">
+  <div class="card form">
+    <div class="hs-embed">
+      <!-- HubSpot form embed placeholder: add your portalId and formId here -->
+    </div>
+    <hr class="or">
+    <form class="fallback" method="post" action="https://formspree.io/f/YOUR_FORM_ID" onsubmit="return validateForm(this)">
+      <div class="field"><label>Full Name</label><input name="name" required></div>
+      <div class="field"><label>Email</label><input name="email" type="email" required></div>
+      <div class="field"><label>Phone</label><input name="phone" type="tel"></div>
+      <div class="field"><label>Service</label>
+        <select name="service">
+          <option>Custom Design & Build</option>
+          <option>Maintenance & IoT</option>
+          <option>Both</option>
+        </select>
+      </div>
+      <div class="field"><label>Estimated Tank Size</label>
+        <select name="size">
+          <option>100–150 gallons</option>
+          <option>150–300 gallons</option>
+          <option>300–600 gallons</option>
+          <option>600–1,000+ gallons</option>
+        </select>
+      </div>
+      <div class="field"><label>Project Location (City)</label><input name="city" required></div>
+      <div class="field"><label>Message</label><textarea name="message" rows="5"></textarea></div>
+      <button class="btn btn-gold">Send Request</button>
+    </form>
+    <!-- Optional booking button — uncomment when ready -->
+    <!-- <p><a class="btn btn-ghost" href="https://calendly.com/YOUR_LINK/30min">Schedule a Design Consult</a></p> -->
+  </div>
+  <div class="card">
+    <h3>Contact</h3>
+    <p>San Antonio, Texas — By appointment only.</p>
+    <p><a href="tel:+12100000000">(210) 000-0000</a><br><a href="mailto:hello@aureusaquatics.com">hello@aureusaquatics.com</a></p>
+    <h3>Service Area</h3>
+    <p>San Antonio • Austin • Hill Country</p>
+    <h3>Design Retainer</h3>
+    <p>Secure your design consultation with a refundable retainer.</p>
+    <a class="btn btn-gold" href="https://checkout.stripe.com/pay/YOUR_CHECKOUT_LINK" target="_blank" rel="noopener">Pay Design Retainer</a>
+  </div>
+</section>
+
+<footer class="site-footer"><div class="container footer-grid">
+  <div><div class="wordmark-foot">Aureus Aquatics</div><p>Luxury custom aquariums &amp; white-glove services in San Antonio, TX.</p></div>
+  <div><h4>Explore</h4><ul><li><a href="/design-build.html">Design &amp; Build</a></li><li><a href="/services.html">Maintenance &amp; IoT</a></li><li><a href="/gallery.html">Gallery</a></li><li><a href="/about.html">About</a></li></ul></div>
+  <div><h4>Contact</h4><ul><li>San Antonio, Texas — By appointment only</li><li><a href="tel:+12100000000">(210) 000-0000</a></li><li><a href="mailto:hello@aureusaquatics.com">hello@aureusaquatics.com</a></li></ul><p class="service-area">San Antonio • Austin • Hill Country</p></div>
+  <div><h4>Stay in touch</h4><form class="subscribe" action="https://YOUR_DC.list-manage.com/subscribe/post?u=YOUR_U_ID&amp;id=YOUR_LIST_ID" method="post" target="_blank" novalidate><input type="email" name="EMAIL" placeholder="Your email" required><button class="btn btn-gold" type="submit">Subscribe</button><small class="note">We send occasional updates only.</small></form></div>
+</div><div class="container fineprint"><p>© <span id="year"></span> Aureus Aquatics. All rights reserved.</p><p><a href="/privacy.html">Privacy</a> • <a href="/terms.html">Terms</a></p></div></footer>
+<script src="/js/main.js"></script>
+</body></html>

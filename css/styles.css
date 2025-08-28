@@ -1,0 +1,62 @@
+:root{--navy:#0B1220;--navy2:#0F1A2B;--gold:#C9A227;--gold2:#B28F24;--sand:#F6F4EE;--ink:#0E0F14;--slate:#465368;--white:#FFFFFF}
+*{box-sizing:border-box}html,body{margin:0;padding:0;background:var(--sand);color:var(--ink)}
+body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;line-height:1.6}
+h1,h2,h3,h4{font-family:"Playfair Display",Georgia,serif;margin:0 0 .5rem;color:var(--ink)}
+a{color:var(--ink);text-decoration:none}a:hover{text-decoration:underline}
+.container{max-width:1200px;padding:0 24px;margin:0 auto}
+.site-header{position:sticky;top:0;z-index:10;background:linear-gradient(180deg,var(--navy),var(--navy2))}
+.site-header .nav{display:flex;align-items:center;justify-content:space-between;height:72px}
+.brand.wordmark{color:#fff;font-family:"Playfair Display",Georgia,serif;font-size:22px;letter-spacing:.6px}
+.primary-nav a{color:#fff;margin-left:24px}
+.btn{display:inline-block;padding:12px 18px;border-radius:8px;border:1px solid transparent;font-weight:600}
+.btn-gold{background:var(--gold);color:var(--ink)}.btn-gold:hover{background:var(--gold2)}
+.btn-ghost{border-color:rgba(255,255,255,.3);color:#fff}.btn-ghost:hover{background:rgba(255,255,255,.1)}
+.hamburger{display:none;background:none;border:none}.hamburger span{display:block;width:24px;height:2px;background:#fff;margin:5px 0}
+.hero{background:linear-gradient(90deg,var(--navy),var(--navy2));color:#fff;padding:64px 0}
+.hero-inner{display:grid;gap:40px;grid-template-columns:1.2fr 1fr;align-items:center}
+.hero-copy h1{color:#fff;font-size:clamp(32px,4vw,56px);line-height:1.05}
+.hero-copy p{color:#E6E9F2;font-size:18px}
+.cta-row{display:flex;gap:14px;margin:12px 0 8px}
+.trust{list-style:none;padding:0;margin:10px 0 0;display:flex;gap:18px;color:#C7CEDB;font-size:14px}
+.hero-media img{width:100%;border-radius:16px;box-shadow:0 20px 60px rgba(0,0,0,.35)}
+.promises{padding:10px 0 0}
+.promise-list{list-style:none;display:flex;flex-wrap:wrap;gap:16px 28px;padding:0;margin:12px 0 0}
+.promise-list li::before{content:"• ";color:var(--gold)}
+.pillars{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;padding:48px 0}
+.pillar{background:#fff;padding:22px;border-radius:14px;box-shadow:0 10px 30px rgba(0,0,0,.06)}
+.link{color:var(--gold);font-weight:600}
+.band{padding:56px 0}
+.band-dark{background:var(--navy);color:#fff}.band-dark h2{color:#fff}
+.band-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:28px}
+.spec-list{list-style:none;padding-left:0}.spec-list li::before{content:"• ";color:var(--gold)}
+.center{text-align:center}.cta{padding:56px 0}.page-hero{padding:40px 0}
+.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.card{background:#fff;padding:22px;border-radius:14px;box-shadow:0 10px 30px rgba(0,0,0,.06)}
+.check{list-style:none;padding-left:0}.check li::before{content:"✓ ";color:var(--gold);font-weight:700}
+.timeline{padding-left:18px}
+.spec-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.gallery-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;padding-bottom:40px}
+.gallery-grid img{width:100%;border-radius:10px}
+.form .field{display:flex;flex-direction:column;gap:6px;margin-bottom:14px}
+.form input,.form select,.form textarea{padding:12px;border:1px solid #D8DEE8;border-radius:10px;font-size:16px}
+.form button{margin-top:8px}
+.site-footer{background:var(--navy);color:#fff;padding-top:36px}
+.footer-grid{display:grid;grid-template-columns:1.2fr 1fr 1fr 1fr;gap:20px;padding-bottom:16px}
+.site-footer a{color:#D8DFF1}
+.wordmark-foot{font-family:"Playfair Display",Georgia,serif;font-size:20px;margin-bottom:8px}
+.subscribe input{width:100%;margin-bottom:8px}
+.fineprint{display:flex;justify-content:space-between;border-top:1px solid rgba(255,255,255,.1);padding:10px 0 18px;color:#A9B2C6}
+.note{color:var(--slate);font-size:12px;display:block;margin-top:6px}
+.page-legal{padding:40px 0 80px}
+@media (max-width:980px){
+  .hero-inner{grid-template-columns:1fr}
+  .promise-list{display:block}
+  .pillars{grid-template-columns:1fr}
+  .spec-cards{grid-template-columns:1fr}
+  .band-grid{grid-template-columns:1fr}
+  .gallery-grid{grid-template-columns:repeat(2,1fr)}
+  .grid-2{grid-template-columns:1fr}
+  .primary-nav{display:none;position:absolute;top:72px;left:0;right:0;background:var(--navy2);padding:16px 24px}
+  .primary-nav a{display:block;margin:10px 0}
+  .hamburger{display:block}
+}
