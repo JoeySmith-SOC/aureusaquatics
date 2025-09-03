@@ -3,7 +3,7 @@
 Static site (HTML/CSS/JS) built for GitHub Pages + Cloudflare.
 
 ## Customize
-- **GA4**: Replace `G-XXXXXXXXXX` in `<head>` across pages with your GA4 Measurement ID.
+- **GA4**: Replace `G-FR7NBJXR1P` in `<head>` across pages with your GA4 Measurement ID.
 - **Google Search Console**: Replace `YOUR_SEARCH_CONSOLE_TOKEN`.
 - **Mailchimp**: Replace the footer form `action` URL with your **Embedded form action** from Mailchimp (Audience → Signup forms → Embedded forms).
 - **HubSpot**: In `contact.html`, paste your embed snippet (portalId + formId) into the placeholder comment.

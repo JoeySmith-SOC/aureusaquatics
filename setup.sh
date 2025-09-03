@@ -16,8 +16,8 @@ cat > index.html <<'EOF'
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/css/styles.css">
   <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)};gtag('js',new Date());gtag('config','G-XXXXXXXXXX');</script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-FR7NBJXR1P"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)};gtag('js',new Date());gtag('config','G-FR7NBJXR1P');</script>
   <script type="application/ld+json">
   {
     "@context":"https://schema.org","@type":"LocalBusiness","name":"Aureus Aquatics",
@@ -676,7 +676,7 @@ cat > README.md <<'EOF'
 Static site (HTML/CSS/JS) built for GitHub Pages + Cloudflare.
 
 ## Customize
-- **GA4**: Replace `G-XXXXXXXXXX` in `<head>` across pages with your GA4 Measurement ID.
+- **GA4**: Replace `G-FR7NBJXR1P` in `<head>` across pages with your GA4 Measurement ID.
 - **Google Search Console**: Replace `YOUR_SEARCH_CONSOLE_TOKEN`.
 - **Mailchimp**: Replace the footer form `action` URL with your **Embedded form action** from Mailchimp (Audience → Signup forms → Embedded forms).
 - **HubSpot**: In `contact.html`, paste your embed snippet (portalId + formId) into the placeholder comment.
